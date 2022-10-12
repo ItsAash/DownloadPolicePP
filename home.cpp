@@ -1,7 +1,10 @@
 #include "home.h"
 #include "./ui_home.h"
-#include<QFileDialog>
-#include<QDir>
+#include <QFileDialog>
+#include <QDir>
+#include <string>
+#include <iostream>
+#include "thread.h"
 
 Home::Home(QWidget *parent) :
     QMainWindow(parent),
@@ -17,17 +20,44 @@ Home::Home(QWidget *parent) :
     ui->home_pb->setIcon(QIcon(":/image/home@3x.png"));
     ui->download->setIcon(QIcon(":/image/home@3x.png"));
     ui->aboutus_pb->setIcon(QIcon(":/image/home@3x.png"));
+
+
+    thread = new Thread;
+    connect(thread, SIGNAL(numberChanged(double, double, double, double)),
+            this, SLOT(onNumberChanged(double, double, double, double)));
+    connect(thread, SIGNAL(idIsOne()), this, SLOT(ifIdIsOne()));
+    connect(thread, SIGNAL(success()), this, SLOT(onSuccess()));
+    connect(thread, SIGNAL(failure()), this, SLOT(onFailure()));
 }
+
+QString Home::url = "";
+QString Home::directory = "";
+QString Home::fname = "";
+
+
+int Home::controlUploadIndex = 4;
+int Home::controlDownloadIndex = 4;
+
 
 Home::~Home()
 {
     delete ui;
 }
 
-
-void Home::on_browse_pb_clicked()
+void Home::setDirectory(const QString &value)
 {
-    QString dir = QFileDialog::getExistingDirectory(this,"Open a folder",QDir::homePath());
-    QFileDialog::ShowDirsOnly| QFileDialog::DontResolveSymlinks;
-    ui->dir_path->setText(dir);
+    this->directory = value;
 }
+
+
+void Home::setUrl(const QString &value)
+{
+    this->url = value;
+}
+
+void Home::setFname(const QString &value)
+{
+    this->fname = value;
+}
+
+

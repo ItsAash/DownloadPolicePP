@@ -222,7 +222,7 @@ QPushButton::pressed
     </property>
     <layout class="QGridLayout" name="gridLayout_2">
      <item row="3" column="1">
-      <widget class="QLineEdit" name="lineEdit_3"/>
+      <widget class="QLineEdit" name="fnameInput"/>
      </item>
      <item row="1" column="2">
       <widget class="QPushButton" name="browse_pb">
@@ -265,7 +265,7 @@ QPushButton::pressed
         <string>File Name :</string>
        </property>
        <property name="buddy">
-        <cstring>lineEdit_3</cstring>
+        <cstring>fnameInput</cstring>
        </property>
       </widget>
      </item>
@@ -275,7 +275,7 @@ QPushButton::pressed
         <string>File Location :</string>
        </property>
        <property name="buddy">
-        <cstring>dir_path</cstring>
+        <cstring>directoryInput</cstring>
        </property>
       </widget>
      </item>
@@ -285,7 +285,7 @@ QPushButton::pressed
         <string>File URL :</string>
        </property>
        <property name="buddy">
-        <cstring>lineEdit</cstring>
+        <cstring>urlInput</cstring>
        </property>
       </widget>
      </item>
@@ -303,10 +303,10 @@ QPushButton::pressed
       </spacer>
      </item>
      <item row="1" column="1">
-      <widget class="QLineEdit" name="dir_path"/>
+      <widget class="QLineEdit" name="directoryInput"/>
      </item>
      <item row="0" column="1">
-      <widget class="QLineEdit" name="lineEdit"/>
+      <widget class="QLineEdit" name="urlInput"/>
      </item>
     </layout>
    </widget>
@@ -321,7 +321,7 @@ QPushButton::pressed
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_2">
      <item>
-      <widget class="QPushButton" name="DOWN_pb">
+      <widget class="QPushButton" name="download_pb">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
          <horstretch>0</horstretch>
@@ -390,11 +390,11 @@ QPushButton::pressed
   </widget>
  </widget>
  <tabstops>
-  <tabstop>lineEdit</tabstop>
-  <tabstop>dir_path</tabstop>
+  <tabstop>urlInput</tabstop>
+  <tabstop>directoryInput</tabstop>
   <tabstop>browse_pb</tabstop>
-  <tabstop>lineEdit_3</tabstop>
-  <tabstop>DOWN_pb</tabstop>
+  <tabstop>fnameInput</tabstop>
+  <tabstop>download_pb</tabstop>
   <tabstop>home_pb</tabstop>
   <tabstop>aboutus_pb</tabstop>
  </tabstops>
