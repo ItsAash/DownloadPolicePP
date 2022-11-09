@@ -33,3 +33,10 @@ RESOURCES += \
     resource/qss.qrc
 
 unix|win32: LIBS += -laria2
+
+win32:CONFIG(release, debug|release): LIBS += -L$$PWD/includes/release/ -laria2
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/includes/debug/ -laria2
+else:unix: LIBS += -L$$PWD/includes/ -laria2
+
+INCLUDEPATH += $$PWD/includes
+DEPENDPATH += $$PWD/includes
