@@ -10,6 +10,7 @@ CONFIG += c++17
 
 SOURCES += \
     aria2cpp.cpp \
+    checkAndConvert.cpp \
     home.cpp \
     main.cpp \
     slots.cpp \
@@ -30,7 +31,6 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 RESOURCES += \
     resource/images.qrc \
-    resource/qss.qrc
 
 unix|win32: LIBS += -laria2
 

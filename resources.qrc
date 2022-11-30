@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>images/spashscreen@3x.png</file>
+        <file>images/about us v2@3x.png</file>
+        <file>images/template@3x.png</file>
+        <file>images/home@3x.png</file>
+        <file>images/bolt@3x.png</file>
+        <file>images/help@3x.png</file>
+        <file>images/s-logo@3x.png</file>
+        <file>images/logov2@3x.png</file>
+    </qresource>
+</RCC>

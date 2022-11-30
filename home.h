@@ -41,6 +41,23 @@ private slots:
     void on_browse_pb_clicked();
     void on_download_pb_clicked();
 
+    void on_home_pb_clicked();
+    void on_aboutus_pb_clicked();
+    void on_downloadPage_pb_clicked();
+    void on_home_pb_2_clicked();
+
+    void on_quitDownload_clicked();
+
+    //check and convert
+    QString convertSpeed(double);
+
+    QString convertFileSize(double);
+
+    bool checkDirectory(QString);
+
+    //clear window for next download
+    void resetWindow();
+
 private:
     Ui::Home *ui;
     Thread *thread;

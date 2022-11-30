@@ -1,30 +1,21 @@
 #include "home.h"
 #include <QFile>
-/*#include <QApplication>*/
 #include <QtWidgets/QApplication>
 #include <QSplashScreen>
 #include <QTimer>
+#include <QPixmap>
 
 int main(int argc, char *argv[])
 {
-    QApplication app(argc, argv);
-
-    QFile styleSheetFile(":/qss/style.qss");
-    styleSheetFile.open(QFile::ReadOnly);
-
+    QApplication a(argc, argv);
     QSplashScreen *splash = new QSplashScreen;
-    splash->setPixmap(QPixmap(":/image/splashscreen.png"));
+    splash->setPixmap(QPixmap(":/image/../images/spashscreen@3x.png"));
     splash->show();
 
-    // Apply the loaded stylesheet
-    QString stylesheet = QLatin1String(styleSheetFile.readAll());
-    app.setStyleSheet(stylesheet);
-    Home window;
+    Home w;
 
     QTimer::singleShot(3000, splash, SLOT(close()));
-    QTimer::singleShot(3000, &window, SLOT(show()));
+    QTimer::singleShot(3000, &w, SLOT(show()));
 
-//    window.show();
-//    w.setWindowTitle("DownloadPolice++");
-    return app.exec();
+    return a.exec();
 }
