@@ -160,6 +160,7 @@ class Session {
     /*
      * Set position of the download
      *
+     *
      * id = Download ID.
      * pos = Position in queue.
      * how = OffsetMode.

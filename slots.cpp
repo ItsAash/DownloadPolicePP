@@ -48,6 +48,7 @@ void Home::on_quitDownload_clicked()
     QApplication::quit();
 }
 
+
 void Home::onNumberChanged(double fileSize, double progressValue, double downSpeedInBytes, double)
 {
     ui->size_llineedit->setText(this->convertFileSize(fileSize));

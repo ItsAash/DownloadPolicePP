@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     QSplashScreen *splash = new QSplashScreen;
-    splash->setPixmap(QPixmap(":/image/../images/spashscreen@3x.png"));
+    splash->setPixmap(QPixmap(":/image/spashscreen@3x.png"));
     splash->show();
 
     Home w;

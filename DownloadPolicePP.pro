@@ -30,7 +30,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 RESOURCES += \
-    resource/images.qrc \
+    images/images.qrc \
 
 unix|win32: LIBS += -laria2
 

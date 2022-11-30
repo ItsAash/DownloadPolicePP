@@ -510,8 +510,8 @@ QPushButton{
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="resource/images.qrc">
-          <normaloff>:/image/images/home@3x.png</normaloff>:/image/images/home@3x.png</iconset>
+         <iconset resource="images/images.qrc">
+          <normaloff>:/image/home@3x.png</normaloff>:/image/home@3x.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -542,8 +542,8 @@ QPushButton{
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="resource/images.qrc">
-          <normaloff>:/image/images/bolt@3x.png</normaloff>:/image/images/bolt@3x.png</iconset>
+         <iconset resource="images/images.qrc">
+          <normaloff>:/image/bolt@3x.png</normaloff>:/image/bolt@3x.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -576,8 +576,8 @@ QPushButton{
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="resource/images.qrc">
-          <normaloff>:/image/images/help@3x.png</normaloff>:/image/images/help@3x.png</iconset>
+         <iconset resource="images/images.qrc">
+          <normaloff>:/image/help@3x.png</normaloff>:/image/help@3x.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -595,6 +595,9 @@ QPushButton{
           <height>20</height>
          </rect>
         </property>
+        <property name="styleSheet">
+         <string notr="true">color: #ffffff;</string>
+        </property>
         <property name="text">
          <string>Home</string>
         </property>
@@ -611,6 +614,9 @@ QPushButton{
           <height>20</height>
          </rect>
         </property>
+        <property name="styleSheet">
+         <string notr="true">color: #ffffff;</string>
+        </property>
         <property name="text">
          <string>Download</string>
         </property>
@@ -626,6 +632,9 @@ QPushButton{
           <width>81</width>
           <height>20</height>
          </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: #ffffff;</string>
         </property>
         <property name="text">
          <string>About Us</string>
@@ -658,8 +667,8 @@ QPushButton{
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="resource/images.qrc">
-          <normaloff>:/image/images/logov2@3x.png</normaloff>:/image/images/logov2@3x.png</iconset>
+         <iconset resource="images/images.qrc">
+          <normaloff>:/image/logov2@3x.png</normaloff>:/image/logov2@3x.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -675,7 +684,7 @@ QPushButton{
   </widget>
  </widget>
  <resources>
-  <include location="resource/images.qrc"/>
+  <include location="images/images.qrc"/>
  </resources>
  <connections/>
 </ui>

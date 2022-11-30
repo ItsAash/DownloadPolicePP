@@ -23,13 +23,11 @@ Home::Home(QWidget *parent) :
 //    ui->aboutus_pb->setIcon(QIcon(":/image/home@3x.png"));
 
 
-    QPixmap pix(":/image/../images/about us v2@3x.png");
-    int w = ui ->label_aboutus_pic ->width();
-    int h = ui ->label_aboutus_pic ->height();
-    ui->label_aboutus_pic->setPixmap(pix.scaled(w, h, Qt::KeepAspectRatio));
+    QPixmap pix(":/image/about us v2@3x.png");
+    ui->label_aboutus_pic->setPixmap(pix.scaled(2400, 1200, Qt::KeepAspectRatio));
     //ui->label_aboutus_pic->setPixmap(pix.scaled(w,h,Qt ::KeepAspectRatio));
 
-    QPixmap pix1(":/image/../images/template@3x.png");
+    QPixmap pix1(":/image/template@3x.png");
     ui->label_bg->setPixmap(pix1.scaled(2400,1200,Qt::KeepAspectRatio));
     ui->label_bg_2->setPixmap(pix1.scaled(2400,1200,Qt::KeepAspectRatio));
 
